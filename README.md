@@ -669,8 +669,7 @@ match ctx.set_contents(prompt_text) {
     Ok(_) => println!("✅ Prompt copiado para a área de transferência!"),
     Err(e) => eprintln!("❌ Erro ao copiar: {}", e), // Log e continua
 }
-```
-O que é 'Graceful Degradation'? É a prática de continuar funcionando com funcionalidade reduzida quando alguma operação falha, em vez de travar completamente a aplicação. Isso é importante porque melhora a experiência do usuário, permitindo que a aplicação continue útil mesmo quando recursos secundários (como clipboard) falham.
+
 ---
 
 
