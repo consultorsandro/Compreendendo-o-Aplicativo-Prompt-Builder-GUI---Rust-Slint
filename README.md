@@ -351,9 +351,11 @@ Em aplicações GUI, frequentemente precisamos:
 - 🔄 **Mutar dados** em múltiplos pontos
 - 🧵 **Single-threaded** (typical GUI scenario)
 
-O que é 'Compartilhar estado entre callbacks'? É a necessidade de múltiplas funções de callback (resposta a eventos de interface) acessarem e modificarem os mesmos dados da aplicação. Isso é importante porque em GUIs diferentes botões e controles precisam trabalhar com o mesmo conjunto de dados, exigindo um mecanismo seguro de compartilhamento.
-O que é 'Mutar dados em múltiplos pontos'? É a capacidade de modificar (alterar) os mesmos dados a partir de diferentes locais no código, algo que o sistema de ownership do Rust normalmente proíbe para garantir segurança de memória. Isso é importante porque aplicações complexas frequentemente precisam que diferentes componentes modifiquem estado compartilhado de forma coordenada.
-O que é 'Single-threaded (typical GUI scenario)'? Refere-se ao fato de que a maioria das bibliotecas de interface gráfica executam em uma única thread (thread principal), evitando complexidade de sincronização entre threads. Isso é importante porque simplifica o desenvolvimento e evita problemas de concorrência, já que a UI deve ser responsiva mas não precisa de paralelismo complexo.
+** O que é 'Compartilhar estado entre callbacks'? É a necessidade de múltiplas funções de callback (resposta a eventos de interface) acessarem e modificarem os mesmos dados da aplicação. Isso é importante porque em GUIs diferentes botões e controles precisam trabalhar com o mesmo conjunto de dados, exigindo um mecanismo seguro de compartilhamento.
+
+** O que é 'Mutar dados em múltiplos pontos'? É a capacidade de modificar (alterar) os mesmos dados a partir de diferentes locais no código, algo que o sistema de ownership do Rust normalmente proíbe para garantir segurança de memória. Isso é importante porque aplicações complexas frequentemente precisam que diferentes componentes modifiquem estado compartilhado de forma coordenada.
+
+** O que é 'Single-threaded (typical GUI scenario)'? Refere-se ao fato de que a maioria das bibliotecas de interface gráfica executam em uma única thread (thread principal), evitando complexidade de sincronização entre threads. Isso é importante porque simplifica o desenvolvimento e evita problemas de concorrência, já que a UI deve ser responsiva mas não precisa de paralelismo complexo.
 
 🛠️ **A Solução: Rc<RefCell<PromptData>>**
 
