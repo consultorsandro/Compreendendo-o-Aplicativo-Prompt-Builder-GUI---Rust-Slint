@@ -160,8 +160,8 @@ rfd = "0.15"            # 📁 Native file dialogs
 [dev-dependencies]
 tempfile = "3.8"        # 🗂️ Arquivos temporários para testes
 
-# 🚀 Otimizações para Release
-O que são 'Otimizações para Release'? São configurações especiais no Cargo.toml que instruem o compilador Rust a gerar código altamente otimizado para produção, priorizando velocidade de execução e tamanho reduzido do binário final em vez da velocidade de compilação. Isso é importante porque permite que a aplicação execute mais rapidamente e ocupe menos espaço em disco quando distribuída aos usuários finais.
+# 🚀 Otimizações para Release #
+** O que são 'Otimizações para Release'? São configurações especiais no Cargo.toml que instruem o compilador Rust a gerar código altamente otimizado para produção, priorizando velocidade de execução e tamanho reduzido do binário final em vez da velocidade de compilação. Isso é importante porque permite que a aplicação execute mais rapidamente e ocupe menos espaço em disco quando distribuída aos usuários finais.
 
 [profile.release]
 opt-level = 3		# 🔥 Otimização máxima
