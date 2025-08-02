@@ -1,5 +1,3 @@
-
-
 ### 📚 Compreendendo o Aplicativo Prompt Builder GUI - Rust + Slint na Prática
 Repositório: "https://github.com/consultorsandro/prompt_builder_gui
 
@@ -161,7 +159,6 @@ rfd = "0.15"            # 📁 Native file dialogs
 tempfile = "3.8"        # 🗂️ Arquivos temporários para testes
 
 # 🚀 Otimizações para Release #
-** O que são 'Otimizações para Release'? São configurações especiais no Cargo.toml que instruem o compilador Rust a gerar código altamente otimizado para produção, priorizando velocidade de execução e tamanho reduzido do binário final em vez da velocidade de compilação. Isso é importante porque permite que a aplicação execute mais rapidamente e ocupe menos espaço em disco quando distribuída aos usuários finais.
 
 [profile.release]
 opt-level = 3		# 🔥 Otimização máxima
@@ -170,6 +167,8 @@ codegen-units = 1	# 🎯 Single unit para melhor otimização
 panic = "abort"	# 💥 Abort em panic (menor binário)
 strip = true		# ✂️ Remove símbolos de debug
 ```
+O que são 'Otimizações para Release'? São configurações especiais no Cargo.toml que instruem o compilador Rust a gerar código altamente otimizado para produção, priorizando velocidade de execução e tamanho reduzido do binário final em vez da velocidade de compilação. Isso é importante porque permite que a aplicação execute mais rapidamente e ocupe menos espaço em disco quando distribuída aos usuários finais.
+
 
 #### 🎯 **Análise Técnica das Dependências**
 
